@@ -18,7 +18,7 @@ class PlayList extends Component {
     })
   }
 
-  componentDidMount() {
+  componentDidMount() {    //load data from a remote endpoint, this is a good place to instantiate the network request
     fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting').then(results => {
       return results.json();
     }).then(data => {

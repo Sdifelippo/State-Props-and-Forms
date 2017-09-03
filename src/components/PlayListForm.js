@@ -10,7 +10,7 @@ class PlayListForm extends Component {
       songNotes: ""
     }
   }
-//handle statments to hold the event
+//handle statments to hold the event(e)
   handleUserName = (e) => {
     this.setState({userName: e.target.value});
   }
@@ -48,7 +48,7 @@ class PlayListForm extends Component {
     });
     this.setState({userName: '', songNotes: '', songArtist: '', songTitle:''});
   }
-
+//create form and submit button,use (onchange,onsubmit) event when the user changes value and submits
   render() {
     return (
       <div className="col-sm-6">
