@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 
 const divStyle = {
+  backgroundColor: '#70BBEB'
 }
 
 const styleWhite = {
-
+  color: 'white',
+  textShadow: '2px 2px #808080'
 }
 
+let cardblock = {
+  height: '13rem'
+
+}
 class PlayListItem extends Component {
   constructor(props) {
     super(props);
@@ -15,7 +21,7 @@ class PlayListItem extends Component {
     let songs = this.props.state.songs.map( e => {
       return(
         <div key={e._id} className="card" style={divStyle} >
-          <div className="card-block">
+          <div className="card-block" >
             <h5 className="card-text text-left"><span style={styleWhite}>User:</span> {e.userName}</h5>
             <h5 className="card-text text-left"><span style={styleWhite}>Artist/Band:</span> {e.songArtist}</h5>
             <h5 className="card-text text-left"><span style={styleWhite}>Title:</span> {e.songTitle}</h5>
