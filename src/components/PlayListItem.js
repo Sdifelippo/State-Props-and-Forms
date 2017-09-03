@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+//inline styling
 const divStyle = {
   backgroundColor: '#70BBEB'
 }
@@ -11,13 +12,13 @@ const styleWhite = {
 
 let cardblock = {
   height: '13rem'
-
 }
+
 class PlayListItem extends Component {
   constructor(props) {
     super(props);
   }
-  render() {
+  render() {     //renders the sidebar list of musci info from the api
     let songs = this.props.state.songs.map( e => {
       return(
         <div key={e._id} className="card" style={divStyle} >

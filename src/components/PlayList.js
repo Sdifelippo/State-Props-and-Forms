@@ -18,7 +18,7 @@ class PlayList extends Component {
     })
   }
 
-  componentDidMount() {    //load data from a remote endpoint, this is a good place to instantiate the network request
+  componentDidMount() {    //load data from a remote endpoint, place to instantiate the network request
     fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting').then(results => {
       return results.json();
     }).then(data => {
@@ -28,7 +28,7 @@ class PlayList extends Component {
   }
 
   render() {
-    return(
+    return(     //boot strap grid styling
       <div className="App col-sm-6">
         <PlayListItem state={this.state} onClick={this.fetchData}/>
       </div>
