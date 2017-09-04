@@ -10,13 +10,11 @@ const styleWhite = {
   textShadow: '2px 2px #808080'
 }
 
-let cardblock = {
-  height: '13rem'
-}
+
 
 class PlayListItem extends Component {
   constructor(props) {
-    super(props);
+    super();
   }
   render() {     //renders the sidebar list of info from the api
     let songs = this.props.state.songs.map( e => {

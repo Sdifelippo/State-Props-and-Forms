@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from '../logo.svg';
 
 const backgroundshade = {
-  backgroundImage: 'linear-gradient(blue, #0080ff)'
+  backgroundImage: 'linear-gradient(blue, #223A5E)'
 }
 
 class NavBar extends Component {
